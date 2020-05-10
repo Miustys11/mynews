@@ -12,7 +12,7 @@
 　　　　@extends('layouts.profile')
 
 
-　　　　{{-- admin.blade.phpの@yield('title')に'My プロフィール'を埋め込む --}}
+　　　　{{-- admin.blade.phpの@yield('title')に''を埋め込む --}}
 　　　　@section('title', 'My プロフィール')
 
 　　　　{{-- admin.blade.phpの@yield('content')に以下のタグを埋め込む --}}
