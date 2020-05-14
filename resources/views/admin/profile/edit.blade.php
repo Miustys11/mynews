@@ -16,7 +16,7 @@
                 <div class="row">
                     <div class="col-md-8 mx-auto">
                         <h2>Myプロフィール編集画面</h2>
-                        <form action="{{ action('Admin\NewsController@create') }}" method="post" enctype="multipart/form-data">
+                        <form action="{{ action('Admin\ProfileController@edit') }}" method="post" enctype="multipart/form-data">
         
                             @if (count($errors) > 0)
                                 <ul>
