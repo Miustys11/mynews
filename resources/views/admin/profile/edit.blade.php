@@ -8,7 +8,7 @@
         <title>MyProfileEdit</title>
     </head>
     <body>
-        @extends('layouts.admin')
+        @extends('layouts.profile')
         @section('title', 'Myプロフィール編集画面')
         
         @section('content')
@@ -16,7 +16,7 @@
                 <div class="row">
                     <div class="col-md-8 mx-auto">
                         <h2>Myプロフィール編集画面</h2>
-                        <form action="{{ action('Admin\ProfileController@edit') }}" method="post" enctype="multipart/form-data">
+                        <form action="{{ action('Admin\ProfileController@update') }}" method="post" enctype="multipart/form-data">
         
                             @if (count($errors) > 0)
                                 <ul>
@@ -34,7 +34,12 @@
                             <div class="form-group row">
                                 <label class="col-md-2">性別</label>
                                 <div class="col-md-10">
-                                    <input type="text" class="form-control" name="gender" value="{{ old('gender') }}">
+                                    <!--<input type="radio" class="form-control" name="gender" value="{{ old('gender') }}">男性-->
+                                    <!--<input type="radio" class="form-control" name="gender" value="{{ old('gender') }}">女性-->
+                                    <!--<input type="radio" class="form-control" name="gender" value="{{ old('gender') }}">その他-->
+                                    <input type="radio" name="gender" checked="checked" value="male">男性
+                                    <input type="radio" name="gender" value="female">女性
+                                    <input type="radio" name="gender" value="other">その他
                                 </div>
                             </div>
                             <div class="form-group row">

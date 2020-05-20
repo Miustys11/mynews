@@ -34,7 +34,12 @@
                             <div class="form-group row">
                                 <label class="col-md-2">性別</label>
                                 <div class="col-md-10">
-                                    <input type="text" class="form-control" name="gender" value="{{ old('gender') }}">
+                                    <!--<input type="radio" class="form-control" name="gender" value="{{ old('gender') }}">男性-->
+                                    <!--<input type="radio" class="form-control" name="gender" value="{{ old('gender') }}">女性-->
+                                    <!--<input type="radio" class="form-control" name="gender" value="{{ old('gender') }}">その他-->
+                                    <input type="radio" name="gender" checked="checked" value="male">男性
+                                    <input type="radio" name="gender" value="female">女性
+                                    <input type="radio" name="gender" value="other">その他
                                 </div>
                             </div>
                             <div class="form-group row">
