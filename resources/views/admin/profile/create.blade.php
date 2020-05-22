@@ -8,14 +8,14 @@
         <title>MyProfile</title>
     </head>
     <body>
-        @extends('layouts.admin')
-        @section('title', 'Myプロフィール')
-        
+        @extends('layouts.profile')
+        @section('title', 'プロフィールの新規作成')
+
         @section('content')
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 mx-auto">
-                        <h2>Myプロフィール</h2>
+                        <h2>プロフィール新規作成</h2>
                         <form action="{{ action('Admin\ProfileController@create') }}" method="post" enctype="multipart/form-data">
         
                             @if (count($errors) > 0)
@@ -30,19 +30,14 @@
                                 <div class="col-md-10">
                                     <input type="text" class="form-control" name="name" value="{{ old('name') }}">
                                 </div>
-                            </div>
-                            <div class="form-group row">
+                            </div><div class="form-group row">
                                 <label class="col-md-2">性別</label>
                                 <div class="col-md-10">
-                                    <!--<input type="radio" class="form-control" name="gender" value="{{ old('gender') }}">男性-->
-                                    <!--<input type="radio" class="form-control" name="gender" value="{{ old('gender') }}">女性-->
-                                    <!--<input type="radio" class="form-control" name="gender" value="{{ old('gender') }}">その他-->
-                                    <input type="radio" name="gender" checked="checked" value="male">男性
-                                    <input type="radio" name="gender" value="female">女性
-                                    <input type="radio" name="gender" value="other">その他
+                                    <input type="radio" name="gender" value="{{ old('gender') }}">男性
+                                    <input type="radio" name="gender" value="{{ old('gender') }}">女性
+                                    <input type="radio" name="gender" value="{{ old('gender') }}">その他
                                 </div>
-                            </div>
-                            <div class="form-group row">
+                            </div><div class="form-group row">
                                 <label class="col-md-2">趣味</label>
                                 <div class="col-md-10">
                                     <input type="text" class="form-control" name="hobby" value="{{ old('hobby') }}">
