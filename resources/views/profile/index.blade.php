@@ -14,7 +14,6 @@
                                     <h3>名前: {{ str_limit($headline->name, 70) }}</h3>
                                     <h3>性別: {{ str_limit($headline->gender, 70) }}</h3>
                                     <h3>趣味: {{ str_limit($headline->hobby, 70) }}</h3>
-                                    <!--<h3>自己紹介: {{ str_limit($headline->introduction, 70) }}</h3>-->
                                 </div>
                             </div>
                         </div>
