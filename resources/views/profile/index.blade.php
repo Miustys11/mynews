@@ -10,7 +10,7 @@
                         <div class="col-md-6">
                             <div class="caption mx-auto">
                                 <div>
-                                    <h1 style="color: red;">New!</h1>
+                                    <h1 style="color: red;">New Profile!</h1>
                                     <h3>名前: {{ str_limit($headline->name, 70) }}</h3>
                                     <h3>性別: {{ str_limit($headline->gender, 70) }}</h3>
                                     <h3>趣味: {{ str_limit($headline->hobby, 70) }}</h3>
